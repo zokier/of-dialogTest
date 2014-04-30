@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxUI.h"
 
 class ofApp : public ofBaseApp {
 public:
@@ -17,4 +18,11 @@ public:
     void windowResized(int w, int h);
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
+
+    // ofxUI
+    void exit();
+    void guiEvent(ofxUIEventArgs &e);
+
+private:
+    ofxUICanvas *gui;
 };
