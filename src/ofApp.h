@@ -25,4 +25,8 @@ public:
 
 private:
     ofxUICanvas *gui;
+    ofxUIButton *alertButton;
+    ofxUIButton *loadButton;
+    ofxUIButton *saveButton;
+    ofxUIButton *textBoxButton;
 };
